@@ -7,6 +7,12 @@ const ProductItem = () => {
   return (
     <div>
       Este es el id del producto: {router.query.id}
+      <button
+        style={{ display: "block" }}
+        onClick={() => router.back()}
+      >
+        Ir para atrás
+      </button>
     </div>
   )
 }
